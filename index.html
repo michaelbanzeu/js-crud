@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript CRUD</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Employee Management Form</h1>
+    <table>
+        <tr>
+            <td>
+                <form>
+                    <div>
+                        <label for="full-name">Full Name*</label>
+                        <label class="validation-error hide" id="fullNameValidationError">This field is required</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label for="emp-code">EMP Code*</label>
+                        <label class="validation-error hide" id="empCodeValidationError">This field is required</label>
+                        <input type="text" name="empCode" id="empCode">
+                    </div>
+                    <div>
+                        <label for="salary">Salary*</label>
+                        <label class="validation-error hide" id="salaryValidationError">This field is required</label>
+                        <input type="number" name="salary" id="salary">
+                    </div>
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit" id="submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>EMP Code</th>
+                            <th>Salary</th>
+                            <th>City</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
